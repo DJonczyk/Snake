@@ -1,2 +1,2 @@
-# Snake-game-C-
-snake game written in C
+# Snake-game
+snake game written in C, based on doubly linked list
