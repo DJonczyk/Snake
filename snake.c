@@ -35,8 +35,8 @@ struct node{
 
 struct snake{
 	struct node *head;
-    struct node *tail;
-    long int score;
+	struct node *tail;
+	long int score;
 	short int count,last_x,last_y;
 	bool field[map_size_x][map_size_y]; //miejsca w ktorych aktualnie znajduje sie waz
 	bool status; //status gry(false=game over)
@@ -77,13 +77,13 @@ int main() {
 	
 	SetConsoleTitle(TEXT("Snake v1.0"));
 	SMALL_RECT windowSize = {0, 0, 25, 17};
-    SetConsoleWindowInfo(wHnd, TRUE, &windowSize);
+	SetConsoleWindowInfo(wHnd, TRUE, &windowSize);
     
-    // zmienna COORD trzymajaca rozmiar bufora:
-    COORD bufferSize = {26, 18};
-    // zmiana rozmiarow bufora:
-    SetConsoleScreenBufferSize(wHnd, bufferSize);
-    // wspolrzedne pozycji menu po przegranej
+ 	// zmienna COORD trzymajaca rozmiar bufora:
+	COORD bufferSize = {26, 18};
+  	// zmiana rozmiarow bufora:
+	SetConsoleScreenBufferSize(wHnd, bufferSize);
+  	// wspolrzedne pozycji menu po przegranej
 	COORD game_over;
 	game_over.X = 7;
 	game_over.Y = 3;
